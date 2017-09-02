@@ -45,9 +45,11 @@ shellから以下のコマンドを実行することで、各種ビルド・タ
 
 - [gulp.js](http://gulpjs.com/)
 - [Babel](https://babeljs.io/)
+- [browserify](http://browserify.org/)
 - [pleeease](http://pleeease.io/)
 - [browser-sync](https://www.browsersync.io/)
 - [jQuery](https://jquery.com/)
+- [howler.js](https://howlerjs.com/)
 - [Reset CSS](http://meyerweb.com/eric/tools/css/reset/)
 
 ## 参考
