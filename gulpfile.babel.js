@@ -13,9 +13,10 @@ import pug from 'gulp-pug';
 import browserSync from 'browser-sync';
 import readConfig from 'read-config';
 import watch from 'gulp-watch';
+import uglify from 'gulp-uglify';
+import buffer from 'vinyl-buffer';
 
 import transform from './lib/vinyl-transform';
-
 
 // const
 const SRC = './src';
@@ -49,6 +50,8 @@ gulp.task('watchify', () => {
             gutil.log(err.codeFrame);
             this.emit('end');
         })
+        .pipe(buffer())
+        .pipe(uglify())
         .pipe(gulp.dest(`${DEST}/js`));
 });
 
